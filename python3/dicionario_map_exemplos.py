@@ -53,3 +53,11 @@ print(my_dic.get((120,321)))
 #Verifica se um valor está no dicionario
 print('br' in paises) #True
 print('GB' in paises) #False
+
+# {Chave:valor}
+d = {x:x**2 for x in range(100)}
+
+
+numeros = [1,2,3,4,5]
+
+print({numero:('par' if numero % 2 == 0 else 'impar') for numero in numeros})
