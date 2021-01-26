@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8" />
+<title>Udemy</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+
+    <form action='#' method="GET">
+        
+        <label for='GET-nome'>Nome</label>
+        <input id='GET-nome' type='text' name='nome'>
+        
+        <input id='GET-curso' type='text' name='curso'>
+
+        <br>
+
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" placeholder='Escolha uma das opções'/>
+
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist>
+
+        <br>
+
+        <fieldset>
+            <legend>Choose your favorite monster</legend>
+            
+            <input type="radio" id="kraken" name="monster">
+            <label for="kraken">Kraken</label><br/>
+            
+            <input type="radio" id="sasquatch" name="monster">
+            <label for="sasquatch">Sasquatch</label><br/>
+            
+            <input type="radio" id="mothman" name="monster">
+            <label for="mothman">Mothman</label>
+        </fieldset>
+
+        <input type='submit' value='Save'>
+        
+        <br>
+        
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+
+        <br>
+        
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" id="b" name="b" value="50" /> +
+          <input type="number" id="a" name="a" value="10" /> =
+          <output name="result" for="a b">60</output>
+        </form>
+
+        <br>
+        
+        <label for="file">File progress:</label>
+
+        <progress id="file" max="100" value="70"> 70% </progress>
+
+        <br>
+        
+        <p>Select a maintenance drone:</p>
+
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey"
+                 checked>
+          <label for="huey">Huey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey">
+          <label for="dewey">Dewey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie">
+          <label for="louie">Louie</label>
+        </div>
+
+        <br>
+
+    </form>
+
+</body>
+
+</html>
