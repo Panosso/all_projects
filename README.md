@@ -1,4 +1,4 @@
-# Projetos
+# Projects
 This is a file with some exercises and projects that I did in some courses.
 
 I accept suggestions and criticisms, here are my contacts:
