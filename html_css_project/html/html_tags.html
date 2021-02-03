@@ -308,16 +308,6 @@
         </audio>
     </figure>
 
-
-    <br>
-    <br>
-    
-    <h1>Tag: canvas</h1>
-    <canvas width="300" height="300">
-      An alternative text describing what your canvas displays.
-    </canvas>
-
-
     <br>
     <br>
 
@@ -572,6 +562,39 @@
       <hr/>
       <menuitem>Separated action</menuitem>
     </menu>
+
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+      <circle cx="50" cy="50" r="40" />
+      <circle cx="150" cy="50" r="4" />
+
+      <svg viewBox="0 0 10 10" x="200" width="100">
+        <circle cx="5" cy="5" r="4" />
+      </svg>
+    </svg>
+
+    <br>
+    <br>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+
+    <h1>Tag: canvas</h1>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas> 
+
+    <br>
+    <br>
+
+    <h1>Tag: Google Map</h1>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.332572229766!2d-47.778759485405196!3d-21.139159182500386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bfece344cd25%3A0x517b7a3d7ab4472b!2sAeroporto%20Estadual%20Dr.%20Leite%20Lopes!5e0!3m2!1spt-BR!2sbr!4v1612036068091!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <br>
+    <br>
 
 </body>
 
