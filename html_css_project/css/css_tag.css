@@ -1,0 +1,24 @@
+*{
+    font-family:sans-serif;
+}
+
+#id_no_h5{
+    color:pink;
+}
+
+.classe_no_h4{
+    color:green;
+}
+
+[disabled]{
+    color:grey;
+}
+
+[lang|=es]{
+    color:red;
+}
+
+[type="button"]{
+    background-color: blue;
+    color: white;
+}
