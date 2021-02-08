@@ -1,3 +1,10 @@
+body{
+    background-color: black;
+
+    /*Alterando vários atributos da fonte.*/
+    font: 20px, "Comic Sans MS", cursive;
+}
+
 *{
     font-family:sans-serif;
 }
@@ -21,4 +28,66 @@
 [type="button"]{
     background-color: blue;
     color: white;
+}
+
+[class*="key"]{
+    color:red;
+}
+
+[class$=key]{
+    color:green;
+}
+
+[class^=key]{
+    color:orange;
+}
+
+[class~=key]{
+    color:blue;
+}
+
+[title*="ExEmpLe_com_operadores"]{
+    font-family: "Times New Roman", Times, serif;
+}
+
+a[href*="google"]{
+    font-size: 40px;
+}
+
+a[href*="google"]:hover{
+    font-size: 50px;
+}
+
+li:first-child, li:last-child{
+    color: yellow;
+}
+
+/*Todos os ultimos elementos p de cada bloco serão afetados*/
+p:last-of-type{
+    font-size: 30px;
+    color: white;
+}
+
+/*Todas as tag's p que contiverem a class paragrafo_classe serão afetados.*/
+p.paragrafo_classe{
+    color:blue;
+}
+
+.section_class{
+    /*Existem 3 métodos para adicionar cor
+     * color: <nome_da_cor>
+     * color: #<código_hex_decimal>
+     * color: rgba(red, green, blue, transparente) valores de 0 a 255 e no transparente precisa ser valores entre 0 e 1, apenas a partir da versão 3 do css
+     * */
+    background-color: rgba(255,255,0, 0.4);
+}
+
+/*Pega a primeira linha de todos os elementos p*/
+p::first-line{
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*TODOS os elementos <p> que estiverem dentro da classe section_class seram afetados.*/
+.section_class > p{
+    font-size: 40px;
 }
