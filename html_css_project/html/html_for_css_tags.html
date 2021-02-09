@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <style = type="text/css">
          h1{
-            background-color: black;
+            background-color: white;
          }
          
          strong{
@@ -15,7 +15,28 @@
          }
          
     </style>
+
     <link rel="stylesheet" href="../css/css_tag.css">
+
+    <style type="text/css">
+        h1:before{
+                content : "Meu";
+            }
+            
+        a.glossary:before{
+                content: " " url("icon.png")
+            }
+            
+        p.numbered:before{
+                content: counter(mynum) ": ";
+                counter-increment: mynum;
+            }
+            
+        span.numbered2:before{
+                content: counter(mynum2);
+                counter-increment: mynum2;
+            }
+    </style>
 
 </head>
 
@@ -68,7 +89,85 @@
     
     <p id="teste_id">paragrafo com id</p>
     
+    <p class="numbered">Contado</p>
+    <p class="numbered">Contado</p>
+    <p class="numbered">Contado</p>
+    <p class="numbered">Contado</p>
+    <p class="numbered">Contado</p>
+    
     <p title="ExEmpLe_com_operadores">Ultimo paragrafo</p>
+
+    <ul>
+        <li>Teste</li>
+        <li>Teste</li>
+        <li>Teste</li>
+    </ul>
+    
+    <ol>
+        <li>Teste</li>
+        <li>Teste</li>
+        <li>Teste</li>
+    </ol>
+
+    <div class="div1">
+        <h2>Aquario 1</h2>
+    </div>
+
+    <div class="div2">
+        <h2>Aquario 2</h2>
+    </div>
+
+    <div id="text_indent">Teste de identação</div>
+
+    <table>
+        <thead>
+            <caption>Meses</caption>
+            <tr>
+                <td>Mes</td>
+                <td>Ano</td>
+            </tr>
+        
+        </thead>
+        
+        <tbody>
+            
+            <tr>
+                <td>Maio</td>
+                <td>2020</td>
+            </tr>
+            
+            <tr>
+                <td>Junho</td>
+                <td>2021</td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+
+    <br>
+    <br>
+    
+    <div class="tooltip">Hover over me
+      <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <br>
+    <br>
+
+    <img src="../imagens/banner.jpg" width="30%" height="30%">
+
+    <br>
+    <br>
+
+    <div class="dropdown">
+        <button class="dropbt">DropDown</button>
+        <div class="dropdown_content">
+            <a href="#">Link <span class="numbered2"></span></a>
+            <a href="#">Link <span class="numbered2"></span></a>
+            <a href="#">Link <span class="numbered2"></span></a>
+        </div>
+    </div>
 
 </body>
 

@@ -1,0 +1,5 @@
+#!/home/machado/git_hub/all_projects/django/django_advanced/gestao_clientes/venv/bin/python
+from django.core import management
+
+if __name__ == "__main__":
+    management.execute_from_command_line()
