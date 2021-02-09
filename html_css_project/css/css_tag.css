@@ -247,7 +247,7 @@ img:hover {
  * Nesse exemplo eu consigo fazer um css diferente para cada tipo 
  * de media, como celular, tv, tablet entre outros e tambem posso definir
  * um ponto de inicio do css, por exemplo, se o navegador está com o tamanho
- * de 480 ou menos, ele vai entrar nesse CSS
+ * de 480 ou menos, ele vai entrar nesse CSS.
  * */
 @media screen (max-width: 400px){
 
