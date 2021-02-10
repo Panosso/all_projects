@@ -242,6 +242,34 @@ img:hover {
     display: block;
 }
 
+#borderimg1 {
+    background-color: white;
+    color: black;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../imagens/border.png) 30 stretch;
+    position: relative;
+}
+
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: realtive;
+    animation-name: exemplo;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframe exemplo{
+    0%   {background-color: red}
+    25%  {background-color: yellow}
+    50%  {background-color: blue}
+    75%  {background-color: green}
+    100% {background-color: red}
+}
 
 /*
  * Nesse exemplo eu consigo fazer um css diferente para cada tipo 
