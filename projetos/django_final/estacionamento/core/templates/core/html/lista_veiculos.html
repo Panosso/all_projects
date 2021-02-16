@@ -13,8 +13,18 @@
     {% for v in veiculos %}
         <li>{{ v.marca }} - {{ v.cor }} - {{ v.proprietario.nome }}</li>
     {% endfor %}
-
 </ul>
+
+<!--
+    No action desse form é onde colocamos qual url ele vai chamar
+     passando o atributo name que está em urls.py
+-->
+<form action="{% url 'veiculo_novo'%}" method="POST">
+    <!--Token necessário para evitar um ataque csrf-->
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Enviar</button>
+</form>
 
 </body>
 </html>

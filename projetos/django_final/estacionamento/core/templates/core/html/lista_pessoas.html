@@ -13,8 +13,15 @@
     {% for p in pessoas %}
         <li>{{ p.nome }}</li>
     {% endfor %}
-
 </ul>
+
+<form action="{% url 'pessoas_novo' %}" method="POST">
+    {% csrf_token %}
+    <!-- Busco o form do views.py e organizo ele em forma de paragrafos <p> -->
+    {{ form.as_p }}
+    <button type="submit">Cadastrar</button>
+
+</form>
 
 </body>
 </html>

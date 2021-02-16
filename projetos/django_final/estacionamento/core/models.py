@@ -4,7 +4,7 @@ import math
 # Create your models here.
 class Pessoa(models.Model):
     nome = models.CharField(null=False, max_length=100, blank=False)
-    sobrenome = models.CharField(max_length=200, blank=False, default='Sem Sobrenome')
+    sobrenome = models.CharField(max_length=200, blank=False)
     endereco = models.CharField(max_length=200, blank=False)
     telefone = models.CharField(max_length=20, blank=False)
     categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE)
@@ -13,7 +13,7 @@ class Pessoa(models.Model):
         return f'{self.id} - {self.nome}'
 
 class Categoria(models.Model):
-    categoria = models.CharField(max_length=2, blank=False, default='B')
+    categoria = models.CharField(max_length=2, blank=False)
     descricao = models.TextField(max_length=1000, blank=False)
 
     def __str__(self):
@@ -26,7 +26,7 @@ class Marca(models.Model):
         return f'{self.marca}'
 
 class Cor(models.Model):
-    cor = models.CharField(max_length=100, default='preto', blank=False)
+    cor = models.CharField(max_length=100, blank=False)
 
     def __str__(self):
         return f'{self.cor}'
