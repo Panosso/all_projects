@@ -1,6 +1,7 @@
 from django.urls import path, include
 from .views import (home,
                     cadastro_pessoas,
+                    cadastro_pessoa,
                     cadastro_veiculos,
                     rot_hora,
                     rot_mes,
@@ -13,7 +14,7 @@ from .views import (home,
 urlpatterns = [
     path('', home, name="core_home"),
     path('cadastros', cadastro_pessoas, name="pessoas"),
-    path('cadastro/<int:id>', cadastro_pessoas, name="pessoas"),
+    path('cadastro/<int:id_cadastro>', cadastro_pessoa, name="pessoas"),
     path('cadastros_novo', cadastro_novo, name="pessoas_novo"),
     path('veiculos', cadastro_veiculos, name="veiculos"),
     path('veiculo_novo', novo_veiculo, name="veiculo_novo"),

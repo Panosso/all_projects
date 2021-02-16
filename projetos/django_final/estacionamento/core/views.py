@@ -9,11 +9,14 @@ def home(request):
     return render(request, 'core/html/index.html', contexto)
 
 
-def cadastro_pessoas(request, id_cadastro):
-    print(id_cadastro)
+def cadastro_pessoas(request):
     form = PessoaForm()
     contexto = {'titulo_pagina': 'Lista de cadastros', 'pessoas': Pessoa.objects.all(), 'form': form}
     return render(request, 'core/html/lista_pessoas.html', contexto)
+
+def cadastro_pessoa(request, id_cadastro):
+    print(id_cadastro)
+    return HttpResponse(f'Id do arrombado {id_cadastro}')
 
 
 def cadastro_veiculos(request):
