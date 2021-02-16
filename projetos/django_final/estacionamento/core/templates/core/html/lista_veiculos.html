@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo_pagina }}</title>
+    
+</head>
+<body>
+
+<h1>Lista total de veiculos</h1>
+
+<ul>
+    {% for v in veiculos %}
+        <li>{{ v.marca }} - {{ v.cor }} - {{ v.proprietario.nome }}</li>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>
