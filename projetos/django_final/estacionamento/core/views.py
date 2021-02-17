@@ -15,8 +15,23 @@ def cadastro_pessoas(request):
     return render(request, 'core/html/lista_pessoas.html', contexto)
 
 def cadastro_pessoa(request, id_cadastro):
-    print(id_cadastro)
-    return HttpResponse(f'Id do arrombado {id_cadastro}')
+    data = {}
+
+    #Vai pegar o id da pessoa que vai atualizada
+    pessoa = Pessoa.objects.get(id=id_cadastro)
+
+    #Instancia o form, porém com a instancia de pessoa, para carregar no form
+    form = PessoaForm(request.POST or None, instance=pessoa)
+    data['pessoa'] = pessoa
+    data['form'] = form
+
+
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('pessoas')
+    else:
+        return render(request, 'core/html/update_pessoa.html', data)
 
 
 def cadastro_veiculos(request):

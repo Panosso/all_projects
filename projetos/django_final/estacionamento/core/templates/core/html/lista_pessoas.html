@@ -11,7 +11,9 @@
 
 <ul>
     {% for p in pessoas %}
-        <li>{{ p.nome }}</li>
+        <li>
+            <a href="{% url 'att_pessoa' p.id %}">{{p.nome}}</a>
+        </li>
     {% endfor %}
 </ul>
 
