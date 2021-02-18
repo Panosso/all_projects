@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa60066d-084f-4fec-ac18-7b25c93a8c95" name="Default Changelist" comment="" />
+    <list default="true" id="aa60066d-084f-4fec-ac18-7b25c93a8c95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/estacionamento/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/meus_statics/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meu_primeiro_projeto/meu_primeiro_projeto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/meu_primeiro_projeto/meu_primeiro_projeto/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/lista_pessoas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/lista_pessoas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/lista_veiculos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/lista_veiculos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/update_pessoa.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/templates/core/html/update_pessoa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/estacionamento/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/estacionamento/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/estacionamento/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/estacionamento/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/templates/html/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../projetos/django_final/estacionamento/templates/base.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../heroku" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
