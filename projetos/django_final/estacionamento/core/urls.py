@@ -5,6 +5,7 @@ from .views import (home,
                     update_pessoa,
                     cadastro_veiculos,
                     update_veiculo,
+                    delete_veiculo,
                     rot_hora,
                     rot_mes,
                     novo_veiculo,
@@ -31,6 +32,7 @@ urlpatterns = [
     path('veiculos', cadastro_veiculos, name="veiculos"),
     path('veiculo_novo', novo_veiculo, name="veiculo_novo"),
     path('veiculo_novo/<int:id_veiculo>', update_veiculo, name='att_veiculo'),
+    path('veiculo_deletar/<int:id_veiculo>', delete_veiculo, name='del_veiculo'),
 
     # Cadastro e lista de movimentações por hora cadastradas
     path('rothora', rot_hora, name="rotativos_hora"),

@@ -89,6 +89,14 @@ def update_veiculo(request, id_veiculo):
     else:
         return render(request, 'core/html/update_veiculo.html', data)
 
+def delete_veiculo(request, id_veiculo):
+    veiculo = Veiculo.objects.get(id=id_veiculo)
+    if request.method == 'POST':
+        veiculo.delete()
+        return redirect('veiculos')
+
+    else:
+        return render(request, 'core/html/del_confirm.html', {'veiculo': veiculo})
 
 #Rotatividade por Hora
 def rot_hora(request):
