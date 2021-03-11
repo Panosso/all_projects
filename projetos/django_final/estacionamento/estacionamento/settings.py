@@ -124,6 +124,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     'meus_statics',
+    'estacionamento/core/templates/core'
 ]
 
 MEDIA_URL = '/media/'

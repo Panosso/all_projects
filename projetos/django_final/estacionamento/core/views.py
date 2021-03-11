@@ -21,7 +21,14 @@ from .forms import (PessoaForm,
 
 # Create your views here.
 def home(request):
-    contexto = {'mensagem': 'Ola Mundo'}
+
+    contexto2 = {'mensagem': 'Ola Mundo12',
+                'titulo': 'Django index12'}
+
+    contexto = {'mensagem': 'Ola Mundo',
+                'titulo': 'Django index',
+                'contexto': contexto2}
+
     return render(request, 'core/html/index.html', contexto)
 
 #Pessoa
