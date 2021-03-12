@@ -20,6 +20,5 @@ from .views import app_index
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='adm'),
-    path('core/', include('core.urls'), name='core_app'),
     path('', app_index, name='inicio')
 ]

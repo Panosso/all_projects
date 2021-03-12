@@ -1,4 +1,5 @@
 from django.urls import path, include
+
 from .views import (home,
                     cadastro_pessoas,
                     cadastro_novo,
@@ -22,6 +23,7 @@ from .views import (home,
 
 urlpatterns = [
     path('', home, name="core_home"),
+
 
     #Cadastros e listagem de pessoas cadastradas
     path('cadastros', cadastro_pessoas, name="pessoas"),
@@ -55,6 +57,6 @@ urlpatterns = [
 
     # #Marca
     path('marca_novas', marca_nova, name="marca_nova"),
-    path('marca_update/<int:id_marca>', update_marca, name="att_marca")
+    path('marca_update/<int:id_marca>', update_marca, name="att_marca"),
 
 ]

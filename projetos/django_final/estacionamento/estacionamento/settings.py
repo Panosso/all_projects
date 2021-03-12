@@ -129,3 +129,11 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media_files'
+
+#Define para qual url será encaminhado após o login
+LOGIN_URL = 'inicio'
+
+LOGIN_REDIRECT_URL = 'inicio'
+
+LOGOUT_REDIRECT_URL = 'inicio'
+
